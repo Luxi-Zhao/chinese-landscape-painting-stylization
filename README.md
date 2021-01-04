@@ -14,11 +14,21 @@ This repo contains source code for training a Pix2Pix model that synthesizes a C
 ![](images/Sketch14.jpg)
 ![](images/Sketch12.jpg)
 ![](images/Sketch13.jpg)
-<!-- ![](images/Sketch8.jpg) -->
-
-An alternative method is explored in a [course project](https://github.com/Luxi-Zhao/sketch-to-Chinese-landscape-painting). 
+<!-- ![](images/Sketch8.jpg) --> 
 
 ## Style Transfer
 ### Sample Results
 ![](images/mountain.jpg)
 ![](images/mountain2.jpg)
+
+## Try it out on Colab
+**Get your own paintings:**
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/Luxi-Zhao/chinese-landscape-painting-stylization/blob/master/src/pix2pixSketch2PaintPredict.ipynb)
+
+**Train model:**
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/Luxi-Zhao/chinese-landscape-painting-stylization/blob/master/src/pix2pixSketch2Paint.ipynb)
+
+## Acknowledgements
+- This project is a continuation of a [course project](https://github.com/Luxi-Zhao/sketch-to-Chinese-landscape-painting) done in collaboration with [<img src="https://avatars3.githubusercontent.com/u/43994607?s=64&amp;v=4" width="32" height="32" alt="@Tony-Feng">](https://github.com/Tony-Feng).
+- Procedure for obtaining sketch-like edge maps was inspired by [SketchyGAN](https://arxiv.org/abs/1801.02753).
+- Pix2Pix model training: [TensorFlow tutorial](https://www.tensorflow.org/tutorials/generative/pix2pix).
