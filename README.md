@@ -1,11 +1,10 @@
 # Chinese Landscape Painting Stylization
-This repo contains source code for training a Pix2Pix model that synthesizes a Chinese landscape painting from a human-drawn sketch. Painting contents include mountains, rocks, trees, and houses. The model can also be used for applying style transfer to photos. 
+This repo contains source code for training a Pix2Pix model that synthesizes Chinese landscape paintings from human-drawn sketches. Contents of synthesized paintings include mountains, rocks, trees, and houses. The model can also be used for applying style transfer to photos. 
 
-## Overall Workflow
-![](images/architecture_diagram.png)
-
-## Sketch to Painting 
-### Sample Results
+## Example Training Data
+![](images/sample_chinese_paintings.png)
+## Example Model Outputs
+### Sketch to Painting 
 ![](images/Sketch2.jpg)
 ![](images/Sketch4.jpg)
 ![](images/Sketch16.jpg)
@@ -16,10 +15,12 @@ This repo contains source code for training a Pix2Pix model that synthesizes a C
 ![](images/Sketch13.jpg)
 <!-- ![](images/Sketch8.jpg) --> 
 
-## Style Transfer
-### Sample Results
+### Style Transfer
 ![](images/mountain.jpg)
 ![](images/mountain2.jpg)
+
+## Overall Technical Workflow
+![](images/architecture_diagram.png)
 
 ## Try it out on Colab
 **Get your own paintings:**
@@ -30,5 +31,6 @@ This repo contains source code for training a Pix2Pix model that synthesizes a C
 
 ## Acknowledgements
 - This project is a continuation of a [course project](https://github.com/Luxi-Zhao/sketch-to-Chinese-landscape-painting) done in collaboration with [<img src="https://avatars3.githubusercontent.com/u/43994607?s=64&amp;v=4" width="32" height="32" alt="@Tony-Feng">](https://github.com/Tony-Feng).
-- Procedure for obtaining sketch-like edge maps was inspired by [SketchyGAN](https://arxiv.org/abs/1801.02753).
+- Training data: [Chinese Landscape Painting Dataset](https://github.com/alicex2020/Chinese-Landscape-Painting-Dataset).
+- Procedure for obtaining sketch-like edge maps was inspired by [Holistically-Nested Edge Detection](https://arxiv.org/abs/1504.06375) and [SketchyGAN](https://arxiv.org/abs/1801.02753).
 - Pix2Pix model training: [TensorFlow tutorial](https://www.tensorflow.org/tutorials/generative/pix2pix).
